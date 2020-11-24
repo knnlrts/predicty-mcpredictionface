@@ -78,6 +78,7 @@ These instructions will get you a copy of this wild project up and running on yo
 ```
 Node >= 10.19.0
 Truffle >= v5.1.48 - a development framework for Ethereum
+Ganache CLI >= v6.11.0
 ```
 
 ### Installing
@@ -86,7 +87,12 @@ Firstly, you need to clone this repo. You can do so by downloading the repo as a
 git clone https://github.com/knnlrts/predicty-mcpredictionface.git
 ```
 
-Now, It's time to install the dependencies. Enter the smart-contracts directory and use
+Now, It's time to install the dependencies. Enter the predicty-mcpredictionface directory and use
+```
+npm install
+```
+
+Similarly, enter the frontend subdirectory and install the dependencies using
 ```
 npm install
 ```
@@ -101,14 +107,14 @@ If you want, you can run the test cases using
 truffle test
 ```
 
-Now, You should start a private network on port 8545 using Truffle develop, Ganache or something similar.
+Now, You should start a private network on port 8545 using Truffle develop, ganache-cli or something similar in a separate terminal window.
 ```
-truffle develop
+ganache-cli
 ```
   
 Then, you can deploy the Predicty McPredictionFace contracts using 
 ```
-migrate --reset
+truffle migrate
 ```
 
 The development server for the frontend can be started on your local machine (http://localhost:3000/) using
