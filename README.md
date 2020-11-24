@@ -122,7 +122,7 @@ The development server for the frontend can be started on your local machine (ht
 npm run start
 ```
 
-Note: the frontend was only tested with Firefox web browser.
+Note: the frontend was only tested superficially with Firefox web browser.
 
 ### Deployed Addresses - Rinkeby
 * Predicty McPredictionFace smart contract: [0xF25eDE3d31e512ce5863874896771b3fBA27204e](https://rinkeby.etherscan.io/address/0xF25eDE3d31e512ce5863874896771b3fBA27204e)
