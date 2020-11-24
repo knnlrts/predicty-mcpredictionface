@@ -1,6 +1,10 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.7.3;
 
+/// @title Predicty McPredictionFace
+/// @author knnlrts 2020
+/// @notice Predicty McPredictionFace is a Solidity smart contract implementation of a prediction market that allows crypto and defi enthousiasts alike to predict the future USD value of ETH on an hourly time frame. This is a final project submission for the ConsenSys Blockchain Developer Online Bootcamp (2020 edition).
+
 import "./external/SafeMath.sol";
 import "./interfaces/AggregatorV3Interface.sol";
 
