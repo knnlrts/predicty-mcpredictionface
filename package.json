@@ -1,0 +1,27 @@
+{
+  "name": "predicty-mcpredictionface",
+  "version": "1.0.0",
+  "description": "This repo hosts my final project submission for the ConsenSys Blockchain Developer Online Bootcamp (2020 edition).",
+  "main": "truffle-config.js",
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@openzeppelin/test-helpers": "^0.5.9"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knnlrts/predicty-mcpredictionface.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/knnlrts/predicty-mcpredictionface/issues"
+  },
+  "homepage": "https://github.com/knnlrts/predicty-mcpredictionface#readme"
+}
