@@ -102,14 +102,14 @@ We need to compile the smart contracts before deploying.
 truffle compile
 ```
 
-If you want, you can run the test cases using
-```
-truffle test
-```
-
 Now, You should start a private network on port 8545 using Truffle develop, ganache-cli or something similar in a separate terminal window.
 ```
 ganache-cli
+```
+
+If you want, you can run the test cases using
+```
+truffle test
 ```
   
 Then, you can deploy the Predicty McPredictionFace contracts using 
