@@ -117,5 +117,6 @@ npm run start
 ```
 
 ### Deployed Addresses - Rinkeby
-- Predicty: 0x0000000000000000000000000000000000000000
-- ETH/USD pricefeed: 0x0000000000000000000000000000000000000000
+- Predicty McPredictionFace smart contract: [0xF25eDE3d31e512ce5863874896771b3fBA27204e](https://rinkeby.etherscan.io/address/0xF25eDE3d31e512ce5863874896771b3fBA27204e)
+- Owner: 0x6fe0b112e10959C2B11154792113c980F2adbdd4
+- ChainLink ETH/USD oracle pricefeed: 0x8A753747A1Fa494EC906cE90E9f37563A8AF630e
