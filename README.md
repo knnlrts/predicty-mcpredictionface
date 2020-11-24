@@ -68,3 +68,54 @@ Once the prediction market has been settled, bet winnings are distributed from t
 In order to provide more security and optimize gas costs, rewards will stay in the smart contract, where they can be subsequently claimed by the winning players. The rewards are claimable as soon as the market has been settled and upon a successful claim, the reward is transferred to the user's wallet. 
 
 ![Alt Text](https://media.giphy.com/media/l2SqgkzuiOQZKeLLi/giphy.gif)
+
+
+## Getting Started
+
+These instructions will get you a copy of this wild project up and running on your local machine for development and testing purposes. 
+
+### Requirements
+```
+Node >= 10.19.0
+Truffle >= v5.1.48 - a development framework for Ethereum
+```
+
+### Installing
+Firstly, you need to clone this repo. You can do so by downloading the repo as a zip and unpacking or using the following git command
+```
+git clone https://github.com/knnlrts/predicty-mcpredictionface.git
+```
+
+Now, It's time to install the dependencies. Enter the smart-contracts directory and use
+```
+npm install
+```
+
+We need to compile the smart contracts before deploying.
+```
+truffle compile
+```
+
+If you want, you can run the test cases using
+```
+truffle test
+```
+
+Now, You should start a private network on port 8545 using Truffle develop, Ganache or something similar.
+```
+truffle develop
+```
+  
+Then, you can deploy the Predicty McPredictionFace contracts using 
+```
+migrate --reset
+```
+
+The development server for the frontend can be started on your local machine (http://localhost:3000/) using
+```
+npm run start
+```
+
+### Deployed Addresses - Rinkeby
+- Predicty: 0x0000000000000000000000000000000000000000
+- ETH/USD pricefeed: 0x0000000000000000000000000000000000000000
