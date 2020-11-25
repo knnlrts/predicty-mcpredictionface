@@ -1,6 +1,6 @@
 # Predicty McPredictionFace: dapp, dapper, dappst!
 
-This repo hosts my final project submission for the ConsenSys Blockchain Developer Online Bootcamp (2020 edition).
+This repo hosts my final project submission for the ConsenSys Blockchain Developer Online Bootcamp (2020 edition). Watch the screen recording walking through my Dapp [here](https://kapwi.ng/c/W8Ul9Wvm).
 
 ![Alt Text](https://media.giphy.com/media/c2pOELjarKcU/giphy.gif)
 
