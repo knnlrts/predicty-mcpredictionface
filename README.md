@@ -116,14 +116,14 @@ Then, you can deploy the Predicty McPredictionFace contracts using
 ```
 truffle migrate --reset
 ```
-Do note that the test cases use time-shifting test the smart contract functionality, so the --reset flag is used to revert the development blockchain back to current timestamp.
+Note: the test cases use time-shifting test the smart contract functionality, so the --reset flag is used to revert the development blockchain back to current timestamp.
 
 The development server for the frontend can be started on your local machine (http://localhost:3000/) using
 ```
 npm run start
 ```
 
-Note: the frontend was only tested superficially with Firefox web browser.
+Note: the frontend may be buggy as I'm just starting out with React (tip: refresh a lot) and was only tested superficially with the Firefox web browser.
 
 ### Deployed Addresses - Rinkeby
 * Predicty McPredictionFace smart contract: [0xF25eDE3d31e512ce5863874896771b3fBA27204e](https://rinkeby.etherscan.io/address/0xF25eDE3d31e512ce5863874896771b3fBA27204e)
