@@ -114,8 +114,9 @@ truffle test
   
 Then, you can deploy the Predicty McPredictionFace contracts using 
 ```
-truffle migrate
+truffle migrate --reset
 ```
+Do note that the test cases use time-shifting test the smart contract functionality, so the --reset flag is used to revert the development blockchain back to current timestamp.
 
 The development server for the frontend can be started on your local machine (http://localhost:3000/) using
 ```
