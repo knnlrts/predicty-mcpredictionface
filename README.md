@@ -19,6 +19,66 @@ Predicty McPredictionFace instead aims to offer a fair, decentralized, and open 
 * __A ChainLink oracle pricefeed__ for the ETH/USD price is leveraged to create and settle prediction markets automatically
 * __Players are incentivized__ to perform new market creation and existing market settlement transactions to keep the prediction market cycle running and decentralized
 
+## Getting Started
+
+These instructions will get you a copy of this wild project up and running on your local machine for development and testing purposes. 
+
+### Requirements
+```
+Node >= 10.19.0
+Truffle >= v5.1.48 - a development framework for Ethereum
+Ganache CLI >= v6.11.0
+```
+
+### Installing
+Firstly, you need to clone this repo. You can do so by downloading the repo as a zip and unpacking or using the following git command
+```
+git clone https://github.com/knnlrts/predicty-mcpredictionface.git
+```
+
+Now, It's time to install the dependencies. Enter the predicty-mcpredictionface directory and use
+```
+npm install
+```
+
+Similarly, enter the frontend subdirectory and install the dependencies using
+```
+npm install
+```
+
+We need to compile the smart contracts before deploying.
+```
+truffle compile
+```
+
+Now, You should start a private network on port 8545 using Truffle develop, ganache-cli or something similar in a separate terminal window.
+```
+ganache-cli
+```
+
+If you want, you can run the test cases using
+```
+truffle test
+```
+  
+Then, you can deploy the Predicty McPredictionFace contracts using 
+```
+truffle migrate
+```
+Note: the test cases use time-shifting test the smart contract functionality, so if you have ran the test cases first, the development blockchain timestamps will display a future datetime.
+
+The development server for the frontend (works with ethers.js and MetaMask can be started on your local machine (http://localhost:3000/) using
+```
+npm run start
+```
+
+Note: the frontend may be buggy as I'm just starting out with React (tip: refresh a lot) and was only tested superficially with the Firefox web browser.
+
+### Deployed Addresses - Rinkeby
+* Predicty McPredictionFace smart contract: [0xF25eDE3d31e512ce5863874896771b3fBA27204e](https://rinkeby.etherscan.io/address/0xF25eDE3d31e512ce5863874896771b3fBA27204e)
+* Owner: 0x6fe0b112e10959C2B11154792113c980F2adbdd4
+* ChainLink ETH/USD oracle pricefeed: 0x8A753747A1Fa494EC906cE90E9f37563A8AF630e
+
 ## Solution overview
 
 ### Market creation
@@ -68,64 +128,3 @@ Once the prediction market has been settled, bet winnings are distributed from t
 In order to provide more security and optimize gas costs, rewards will stay in the smart contract, where they can be subsequently claimed by the winning players. The rewards are claimable as soon as the market has been settled and upon a successful claim, the reward is transferred to the user's wallet. 
 
 ![Alt Text](https://media.giphy.com/media/l2SqgkzuiOQZKeLLi/giphy.gif)
-
-
-## Getting Started
-
-These instructions will get you a copy of this wild project up and running on your local machine for development and testing purposes. 
-
-### Requirements
-```
-Node >= 10.19.0
-Truffle >= v5.1.48 - a development framework for Ethereum
-Ganache CLI >= v6.11.0
-```
-
-### Installing
-Firstly, you need to clone this repo. You can do so by downloading the repo as a zip and unpacking or using the following git command
-```
-git clone https://github.com/knnlrts/predicty-mcpredictionface.git
-```
-
-Now, It's time to install the dependencies. Enter the predicty-mcpredictionface directory and use
-```
-npm install
-```
-
-Similarly, enter the frontend subdirectory and install the dependencies using
-```
-npm install
-```
-
-We need to compile the smart contracts before deploying.
-```
-truffle compile
-```
-
-Now, You should start a private network on port 8545 using Truffle develop, ganache-cli or something similar in a separate terminal window.
-```
-ganache-cli
-```
-
-If you want, you can run the test cases using
-```
-truffle test
-```
-  
-Then, you can deploy the Predicty McPredictionFace contracts using 
-```
-truffle migrate
-```
-Note: the test cases use time-shifting test the smart contract functionality, so if you have ran the test cases first, the development blockchain timestamps will display a future datetime.
-
-The development server for the frontend can be started on your local machine (http://localhost:3000/) using
-```
-npm run start
-```
-
-Note: the frontend may be buggy as I'm just starting out with React (tip: refresh a lot) and was only tested superficially with the Firefox web browser.
-
-### Deployed Addresses - Rinkeby
-* Predicty McPredictionFace smart contract: [0xF25eDE3d31e512ce5863874896771b3fBA27204e](https://rinkeby.etherscan.io/address/0xF25eDE3d31e512ce5863874896771b3fBA27204e)
-* Owner: 0x6fe0b112e10959C2B11154792113c980F2adbdd4
-* ChainLink ETH/USD oracle pricefeed: 0x8A753747A1Fa494EC906cE90E9f37563A8AF630e
