@@ -1,6 +1,6 @@
 # Design pattern decisions
 
-## Fail early and fail loud
+## Fail Early and Loud
 Predicty McPredictionFace implements several require() statements, checking the condition(s) required for execution as early as possible and throwing an exception if the condition is not met. This also reduces unnecessary code execution in the event that an exception will be thrown eventually.
 
 ## Restricting Access / Access Control
