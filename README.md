@@ -1,6 +1,6 @@
 # Predicty McPredictionFace: Dapp, Dapper, Dappst!
 
-This repo hosts my final project submission for the ConsenSys Blockchain Developer Online Bootcamp (2020 edition). Watch the screen recording walking through my Dapp [here](https://kapwi.ng/c/W8Ul9Wvm).
+This repo hosts my final project submission for the ConsenSys Blockchain Developer Online Bootcamp (2020 edition).
 
 ![Alt Text](https://media.giphy.com/media/c2pOELjarKcU/giphy.gif)
 
@@ -69,7 +69,7 @@ In order to provide more security and optimize gas costs, rewards will stay in t
 
 ![Alt Text](https://media.giphy.com/media/l2SqgkzuiOQZKeLLi/giphy.gif)
 
-## Getting Started
+## Getting started
 
 These instructions will get you a copy of this wild project up and running on your local machine for development and testing purposes. 
 
@@ -124,7 +124,44 @@ npm run start
 
 Note: the frontend may be buggy as I'm just starting out with React (tip: refresh a lot) and was only tested superficially with the Firefox web browser.
 
-### Deployed Addresses - Rinkeby
+### Deployed addresses - Rinkeby testnet
 * Predicty McPredictionFace smart contract: [0xF25eDE3d31e512ce5863874896771b3fBA27204e](https://rinkeby.etherscan.io/address/0xF25eDE3d31e512ce5863874896771b3fBA27204e)
 * Owner: 0x6fe0b112e10959C2B11154792113c980F2adbdd4
 * ChainLink ETH/USD oracle pricefeed: 0x8A753747A1Fa494EC906cE90E9f37563A8AF630e
+
+## Front-end screen recording
+Watch the screen recording walking through this Dapp [here](https://kapwi.ng/c/W8Ul9Wvm). Below are some explanations to go along with the recording: 
+
+### User Interface:
+The demo starts from an hourly prediction market that has expired (no more bets can be placed) and ready to be settled.
+The UI displays:
+* The prediction market state (Live, In Settlement, or Settled)
+* The name of the specific prediction market instance (e.g. "What will be the price of ETH/USD at Wed, 25 Nov 2020 13:00:00 GMT ?")
+* The countdown timer (showing how much time there is left to place bets in a live market, or wait until settlement time in a market that is in settlement)
+* A "wisdom of the crowd" pie chart, showing the total bet distribution and amounts that have been staked in the prediction market
+* The relevant buttons to place bets, settle the existing market, or start a new prediction market
+* An overview of the current bets placed and their amount staked by the current player address in the running prediction market
+* A TradingView widget displaying the latest hourly price of ETH/USD, so players can make up their mind better on which option they should bet (Bullish, Neutral, or Bearish)
+
+### Settling a prediction market:
+Any willing player can settle a prediction market that has reached it's predetermined settlement time, by clicking the "Settle market" button and signing the market settlement transaction. 
+The player who clicked the button first, will be able to claim a market settlement reward (an incentive to keep the prediction markets cycle running and decentralized).
+After clicking the button, the smart contract will call the pricefeed oracle to retrieve the (historical) ETH/USD at the settlement time and move the prediction market into the "Settled" state.
+This page also displays the winning bet option and the total market pool to be distributed over the winning players.
+
+### Creating a new prediction market
+Once the running prediction market has been settled, the "Create new market" button becomes available.
+Any willing player can create a new prediction market, by clicking the "Create new market" button and signing the new market creation transaction. 
+The player who clicked the button first, will be able to claim a market creation reward (an incentive to keep the prediction markets cycle running and decentralized).
+
+### Placing bets in a live prediction market
+Once a new prediction has been created, it is "Live" and open to accept bets by players.
+By default, 3 betting options are calculated, based on the latest ETH/USD price received from the pricefeed oracle at market creation time (Bullish, Neutral, or Bearish).
+Bets are placed in wei.
+
+### Claiming rewards
+Players can go to the "Rewards" page to claim any winning bets, market creation and market settlement rewards, that have been awarded to them.
+After clicking the "Claim" button, the reward amount is transfered to the calling address.
+
+### My about page
+The "About" page details the high-level workings of this Dapp, but most imprtantly, it features a picture of my dog! ;)
