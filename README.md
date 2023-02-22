@@ -130,7 +130,7 @@ Note: the frontend may be buggy as I'm just starting out with React (tip: refres
 * ChainLink ETH/USD oracle pricefeed: 0x8A753747A1Fa494EC906cE90E9f37563A8AF630e
 
 ## Front-end screen recording
-Watch the screen recording walking through this Dapp [here](https://kapwi.ng/c/W8Ul9Wvm). Below are some explanations to go along with the recording: 
+Watch the screen recording walking through this Dapp [here](https://github.com/knnlrts/predicty-mcpredictionface/blob/main/demo.mp4). Below are some explanations to go along with the recording: 
 
 ### User Interface:
 The demo starts from an hourly prediction market that has expired (no more bets can be placed) and ready to be settled.
